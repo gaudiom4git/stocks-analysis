@@ -24,7 +24,8 @@ Results below are based on the Refactoring code which is in Macro AllStocksAnaly
 
 ### Stock Analysis for Year 2017
 
-![Stock Results 2017](https://github.com/gaudiom4git/stocks_analysis/blob/main/resources/Year2017Results.png)
+
+![Stock Results 2017](https://github.com/gaudiom4git/stocks-analysis/blob/main/resources/Year2017Results.png)
 
 Stock results for the Year 2017 were mostly positive.  All stocks had a positive return except for ticker TERP which 
 had a negative 7.2%.  Best performer was ticker DQ with almost a 200% return.  Most traded stock was SPWR with volume
@@ -32,7 +33,7 @@ of 782,187,000.   Lowest traded stock was DQ with a volume of 35,796,200.
 
 ### Stock Analysis for Year 2018
 
-![Stock Results 2018](https://github.com/gaudiom4git/stocks_analysis/blob/main/resources/Year2018Results.png)
+![Stock Results 2018](https://github.com/gaudiom4git/stocks-analysis/blob/main/resources/VBA_Challenge_2018.png)
 
 Stock results for the Year 2018 were mostly negative.  The only 2 that had a postive return were tickers ENPH with a 
 return of 81.9% and RUN with an even higher 84.0%.  Both tickers had very high volumes. Worst performer was DQ with a 
