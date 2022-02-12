@@ -33,7 +33,7 @@ of 782,187,000.   Lowest traded stock was DQ with a volume of 35,796,200.
 
 ### Stock Analysis for Year 2018
 
-![Stock Results 2018](https://github.com/gaudiom4git/stocks-analysis/blob/main/resources/VBA_Challenge_2018.png)
+![Stock Results 2018](https://github.com/gaudiom4git/stocks-analysis/blob/main/resources/Year2018Results.png)
 
 Stock results for the Year 2018 were mostly negative.  The only 2 that had a postive return were tickers ENPH with a 
 return of 81.9% and RUN with an even higher 84.0%.  Both tickers had very high volumes. Worst performer was DQ with a 
@@ -41,31 +41,30 @@ negative 62% return.  Volume was much higher for DQ compared to 2017.
 
 ### Runtimes with and without Refactoring
 
-Initial code in the AllStocksAnalysis() macro writes results to the worksheet as the script loops through the
-Stock data worksheet year.  Refactored code in AllStocksAnalysisRefactored() had us store the results in arrays
-which was much faster than writing to the worksheets while looping through all the data.   
+Runtime for Original Code for 2017 was 0.6875 seconds.  Click here for [VBA_Challenge_2017.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/VBA_Challenge_2017.png).
+Runtime for Refactored Code for 2017 was 0.15625 seconds.  Click here for [Refactored_2017.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/Refactored_2017.png).
 
-The refactored code wrote to the worksheet while looping through the arrays that stored the stock result values.
+Runtime for Original Code for 2018 was 0.7109375 seconds.  Click here for [VBA_Challenge_2018.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/VBA_Challenge_2018.png).
+Runtime for Refactored Code for 2018 was 0.171875 seconds.  Click here for [Refactored_2018.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/Refactored_2018.png).
 
-Runtime for Original Code for 2017 was XX.  Click here for image.
-Runtime for Refactored Code for 2017 was YY.  Click here for image.
-Runtime for Original Code for 2018 was YY.  Click here for image.
-Runtime for Refactored Code for 2018 was YY.  Click here for image.
+Refactored code ran much faster for both years.
 
 ## Summary
 
 There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt). 
 
 Advantages to refactoring code is faster runtimes, usage of less memory, simpler for other coders to follow.  It
-takes time to refactor code as developers will initially code based on current requirements and to validate results.
-
-There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
+might be a little more difficult to debug refactored code as you are storing more data in memory and will have debug to step
+through the program.
 
 The original script had us reading through the whole stock data worksheet for each ticker.  So, for 12 stock tickers, you
 read all the rows in the stock data 12 times, that's 12 x 3103 rows.  That's 37236 rows to process.
 
-The refactored script had us loop through the stock data 1 time and storing the ticker data whenever the ticker changed.  
-This works for this worksheet because it is sorted by ticker and closing date.  If it was not sorted this way, the results
+The refactored script had us loop through the stock data 1 time.  Within the loop, we were checking for a change in the ticker on the
+stock sheet.  If there was a change, volume totals, start and end price were stored in their respective arrays.  The ticker index was 
+increased on a change so that the program would move the next ticker (stock symbol) in the ticker array.   
+
+The refactored script works for this worksheet because it is sorted by ticker and closing date.  If it was not sorted this way, the results
 would be inaccurate.
 
 
