@@ -46,15 +46,26 @@ which was much faster than writing to the worksheets while looping through all t
 
 The refactored code wrote to the worksheet while looping through the arrays that stored the stock result values.
 
+Runtime for Original Code for 2017 was XX.  Click here for image.
+Runtime for Refactored Code for 2017 was YY.  Click here for image.
+Runtime for Original Code for 2018 was YY.  Click here for image.
+Runtime for Refactored Code for 2018 was YY.  Click here for image.
+
 ## Summary
 
 There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt). 
 
+Advantages to refactoring code is faster runtimes, usage of less memory, simpler for other coders to follow.  It
+takes time to refactor code as developers will initially code based on current requirements and to validate results.
+
 There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
 
-The runtime pictured here are for the refactored code for year 2018.
+The original script had us reading through the whole stock data worksheet for each ticker.  So, for 12 stock tickers, you
+read all the rows in the stock data 12 times, that's 12 x 3103 rows.  That's 37236 rows to process.
 
-The runtime pictured here is for the original code for year 2018.   
+The refactored script had us loop through the stock data 1 time and storing the ticker data whenever the ticker changed.  
+This works for this worksheet because it is sorted by ticker and closing date.  If it was not sorted this way, the results
+would be inaccurate.
 
-Results in a % difference.
+
 
