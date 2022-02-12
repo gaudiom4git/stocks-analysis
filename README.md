@@ -41,17 +41,16 @@ negative 62% return.  Volume was much higher for DQ compared to 2017.
 
 ### Runtimes with and without Refactoring
 
-Runtime for Original Code for 2017 was 0.6875 seconds.  Click here for [VBA_Challenge_2017.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/VBA_Challenge_2017.png).
-Runtime for Refactored Code for 2017 was 0.15625 seconds.  Click here for [Refactored_2017.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/Refactored_2017.png).
-
-Runtime for Original Code for 2018 was 0.7109375 seconds.  Click here for [VBA_Challenge_2018.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/VBA_Challenge_2018.png).
-Runtime for Refactored Code for 2018 was 0.171875 seconds.  Click here for [Refactored_2018.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/Refactored_2018.png).
+Macro	|Year	| Runtime			| Image
+-------|------|---------------|---
+Original Code| 2017 |0.6875s |[VBA_Challenge_2017.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/VBA_Challenge_2017.png).
+Refactored Code | 2017 | 0.15625s |[Refactored_2017.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/Refactored_2017.png).
+Original Code | 2018 | 0.7109375s |[VBA_Challenge_2018.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/VBA_Challenge_2018.png).
+Refactored Code| 2018 | 0.171875s | [Refactored_2018.png](https://github.com/gaudiom4git/stocks-analysis/tree/main/resources/Refactored_2018.png).
 
 Refactored code ran much faster for both years.
 
 ## Summary
-
-There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt). 
 
 Advantages to refactoring code is faster runtimes, usage of less memory, simpler for other coders to follow.  It
 might be a little more difficult to debug refactored code as you are storing more data in memory and will have debug to step
